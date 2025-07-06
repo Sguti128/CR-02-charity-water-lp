@@ -1,47 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charity: Water Landing Page</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 10px 20px;
+      position: relative;
+      top: -90px;
+    }
+
+    .logo img {
+      height: 50px;
+    }
+
+    .cta-button {
+      margin-top: 0;
+      align-self: flex-start;
+    }
+
+    .cta-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      background-color: #FFC907;
+      color: black;
+      padding: 50px 20px;
+      gap: 20px;
+    }
+
+    .cta-box {
+      flex: 1 1 45%;
+      background-color: #FFC907;
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    .cta-box h2 {
+      margin-bottom: 10px;
+    }
+
+    .cta-box .cta-button {
+      background-color: black;
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 15px;
+    }
+
+    @media (max-width: 768px) {
+      .cta-wrapper {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
-    <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
+  <header class="hero">
+    <div class="hero-bg"></div>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="img/charitywater_logo_horizontal_WhiteText (1).png" alt="Charity Water Logo" />
+      </div>
+      <a href="#impact" class="cta-button">See the Impact</a>
+    </nav>0
+    <div class="hero-content">
+      <h1>Track Every Drop.<br />Trust Every Impact.</h1>
+      <p>Be part of lasting change with clean water solutions you can track.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="story" id="impact">
+      <div class="story-text">
+        <h2 style="color: #FFC907;">Every Story Begins with Water</h2>
+        <p style="color: #ffffff;">
+          In communities around the world, access to clean water means education, health, and hope. Your support brings that hope to life by funding projects that create long-term, trackable impact. Every pump installed and every drop tracked is a promise kept.
+        </p>
+      </div>
     </section>
 
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
-        <p>
-         
+    <section class="cta-wrapper">
+      <div class="cta-box">
+        <h2>Ready to Make a Difference?</h2>
+        <p>Join the global movement to bring clean water to everyone, everywhere.</p>
+      </div>
+      <div class="cta-box">
+        <a href="#" class="cta-button">Donate Today</a>
+      </div>
     </section>
+  </main>
 
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
-        </div>
-    </section>
-
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
-    </section>
+  <footer>
+    <p>&copy; 2025 charity: water. All rights reserved.</p>
+  </footer>
 </body>
+
 </html>

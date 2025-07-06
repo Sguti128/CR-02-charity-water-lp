@@ -10,13 +10,13 @@ body {
 /* 💛 Hero Section */
 .hero {
   position: relative;
-  text-align: center;
+  text-align: left;
   color: white;
   padding: 100px 20px 60px;
 }
 
 .hero-bg {
-  background-image: url('img/impact-photo.jpg'); /* replace if image name differs */
+  background-image: url('img/impact-photo2.jpg'); /* replace if image name differs */
   background-size: cover;
   background-position: center;
   position: absolute;
@@ -62,8 +62,9 @@ body {
   flex-wrap: wrap;
   align-items: center;
   padding: 60px 20px;
-  background-color: #000000; /* Light Blue */
+  background-color: #000000; 
   color: #000;
+  text-align: center;
 }
 
 .story img {
@@ -76,15 +77,16 @@ body {
 .story-text {
   flex: 1 1 300px;
   padding: 20px;
+  text-align: center;
 }
 
 .story-text h2 {
   color: #000000; /* Blue */
 }
 
-/* 🟡 CTA Section */
+
 .cta {
-  background-color: #f5cd3d; /* Yellow */
+  background-color: #cdccca; /* Yellow */
   color: black;
   text-align: center;
   padding: 50px 20px;
@@ -96,16 +98,16 @@ body {
 
 .cta-button {
   display: inline-block;
-  background-color: #000000; /* Blue */
+  background-color: #000000;
   color: white;
   text-decoration: none;
   padding: 12px 25px;
   margin-top: 15px;
   border-radius: 5px;
   font-weight: bold;
+  align-items: center;
 }
 
-/* 👣 Footer */
 footer {
   background-color: #f0f0f0;
   text-align: center;
@@ -130,5 +132,45 @@ footer {
   }
 }
 
-/* 💡 Why use media queries?
-   They help your layout adapt to smaller screens like phones, improving readability and design. */
+/* Button hover animation */
+.cta-button:hover {
+  background-color: #2E9DF7;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+/* Benefit card hover animation */
+.benefit-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Hero content fade-in on load */
+.hero-content {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.headline-icon {
+  height: 28px;       
+  width: auto;
+  vertical-align: middle;
+  margin-left: 10px;  
+}
+.story {
+  background: linear-gradient(to bottom, #000000 40%, #FFC907 100%);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
