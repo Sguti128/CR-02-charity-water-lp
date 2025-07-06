@@ -174,3 +174,45 @@ footer {
   padding: 60px 20px;
   text-align: center;
 }
+/* 🌍 Real World Impact Section */
+.impact-story {
+  background-color: #FFC907;
+  padding: 60px 20px;
+}
+
+.impact-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.impact-image {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.impact-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.impact-text {
+  flex: 1 1 50%;
+  text-align: center;
+  color: black;
+}
+
+.impact-text h2 {
+  margin-bottom: 20px;
+}
+
+/* 📱 Responsive for Mobile */
+@media (max-width: 768px) {
+  .impact-content {
+    flex-direction: column;
+  }
+}
